@@ -4,6 +4,7 @@
     "description": "DevForge multi-tag scripting language for .Dev files",
     "version": "1.0.2",
     "publisher": "JacobS",
+    "icon": "IMG/logo.png",
     "engines": {
         "vscode": "^1.80.0"
     },
@@ -36,5 +37,9 @@
                 "path": "./syntaxes/devforge.tmLanguage.json"
             }
         ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/skilling565611/DevF6rge.git"
     }
 }
