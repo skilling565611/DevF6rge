@@ -15,4 +15,5 @@
 ║File Types Groups║<br>
 ╚═══════════╝<br>
 1.[Hp|MP|LV|EXP|Link]<br>
-2.[Gender|Name]
+2.[Gender|Name|Size]<br>
+3.[RGB=(r,g,d)]<br>
