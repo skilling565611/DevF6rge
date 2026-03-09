@@ -36,7 +36,8 @@
                     ".battle",
                     ".Ships",
                     ".ships",
-                    ".Dex,"".DEX",
+                    ".Dex,",
+                    ".DEX",
                     ".dex"
                 ],
                 "configuration": "./language-configuration.json"
