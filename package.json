@@ -2,7 +2,7 @@
     "name": "devforge-language",
     "displayName": "DevForge",
     "description": "DevForge multi-tag scripting language for .Dev files",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "publisher": "JacobS",
     "icon": "IMG/logo.png",
     "engines": {
@@ -35,7 +35,9 @@
                     ".Battle",
                     ".battle",
                     ".Ships",
-                    ".ships"
+                    ".ships",
+                    ".Dex,"".DEX",
+                    ".dex"
                 ],
                 "configuration": "./language-configuration.json"
             }
