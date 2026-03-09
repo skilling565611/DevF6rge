@@ -9,7 +9,8 @@
 5.[.Battle|.battle]<br>
 6.[.Log|.log|.LOG]<br>
 7.[.Ships|.ships]<br>
+8.[.Dex|,DEX|.dex]<br>
 ╔═══════════╗<br>
 ║File Types Groups║<br>
 ╚═══════════╝<br>
-1[Hp|MP|LV|EXP]<br>
+1[Hp|MP|LV|EXP|Link]<br>
