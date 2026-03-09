@@ -1,0 +1,42 @@
+{
+    "name":"devforge-language",
+    "displayName": "DevForge",
+    "description": "DevForge is a powerful code generation tool that helps developers create boilerplate code quickly and efficiently. With DevForge, you can generate code for various programming languages and frameworks, saving you time and effort in your development process.",
+    "version": "1.0.0",
+    "publisher": "JacobS",
+    "engines": {
+        "vscode": "^1.22.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "grammars": [
+        {
+            "language": "devforge",
+            "scopeName": "source.devforge",
+            "path": "./syntaxes/devforge.tmLanguage.json"
+        }
+    ],
+    "snippets": [
+        {
+            "language": "devforge",
+            "path": "./snippets/devforge.code-snippets"
+        }
+    ],
+    "id": "devforge-language",
+    "aliases": [
+        "DevForge",
+        "devForge",
+        "devforge"
+    ],
+    "extensions": [
+        ".Dev",
+        ".dev",
+        ".DEV",
+        ".Log",
+        ".log",
+        ".LOG"
+    ],
+    "configuration":"./language-configuration.json",
+    "repository": "https://github.com/skilling565611/DevF6rge.git"
+}
