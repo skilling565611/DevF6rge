@@ -88,3 +88,43 @@ DevF6rge is designed to provide a flexible structured data format for:<br>
 - Group names are flexible and may be customized.<br>
 - Parser validates structure/syntax, not naming conventions.<br>
 - These examples help maintain consistency/readability.<br>
+╔══════════════╗<br>
+║LOG File Format║<br>
+╚══════════════╝<br>
+
+LOG files use the same structural syntax as DEV files.<br>
+Primary differences are intended purpose and usage context.<br><br>
+
+Purpose:<br>
+
+- Runtime Logging<br>
+- Diagnostics / Error Tracking<br>
+- Event Recording<br>
+- Debug Output<br>
+- Historical Activity Tracking<br><br>
+
+Basic Example:<br>
+
+[Session]:{
+    Start=12:00PM
+    End=12:45PM
+    Status=Completed
+}
+
+[Events]:{
+    [Event1]:{
+        Type=Load
+        Result=Success
+    }
+
+    [Event2]:{
+        Type=Save
+        Result=Success
+    }
+}
+
+Notes:<br>
+
+- LOG files follow the same parser/structure rules as DEV files.<br>
+- Applications may reserve special LOG groups/categories for diagnostics.<br>
+- LOG files are intended for runtime/generated data rather than static configuration.<br>
