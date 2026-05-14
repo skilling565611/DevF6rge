@@ -1,0 +1,13 @@
+// Basic DevForge structure
+[Project]:{
+    Name="Example Project"
+    Type=Configuration
+    Version=1
+    Active=true
+
+    [Settings]:{
+        Mode=Development
+        Debug=enabled
+        MaxItems=25
+    }
+}

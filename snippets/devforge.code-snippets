@@ -1,0 +1,54 @@
+{
+    "DevForge Category": {
+        "prefix": "category",
+        "body": [
+            "[${1:Name}]:{",
+            "\t$0",
+            "}"
+        ],
+        "description": "Create a DevForge category block"
+    },
+    "DevForge Nested Category": {
+        "prefix": "nested-category",
+        "body": [
+            "[${1:Parent}]:{",
+            "\t[${2:Child}]:{",
+            "\t\t$0",
+            "\t}",
+            "}"
+        ],
+        "description": "Create nested DevForge category blocks"
+    },
+    "DevForge Key Value": {
+        "prefix": "key-value",
+        "body": [
+            "${1:Key}=${2:Value}"
+        ],
+        "description": "Create a DevForge key=value entry"
+    },
+    "DevForge String Value": {
+        "prefix": "string-value",
+        "body": [
+            "${1:Name}=\"${2:Value}\""
+        ],
+        "description": "Create a quoted DevForge string value"
+    },
+    "DevForge Boolean Value": {
+        "prefix": "boolean-value",
+        "body": [
+            "${1:Active}=${2|true,false,yes,no,enabled,disabled|}"
+        ],
+        "description": "Create a DevForge boolean-style value"
+    },
+    "DevForge Log Session": {
+        "prefix": "log-session",
+        "body": [
+            "[Session]:{",
+            "\tStart=${1:12:00PM}",
+            "\tStatus=${2:Started}",
+            "\t$0",
+            "}"
+        ],
+        "description": "Create a simple DevForge log session block"
+    }
+}

@@ -1,130 +1,86 @@
-DevF6rge
+# DevForge
 
-Custom structured file format / parser framework for Dev-based applications, configuration systems, profile systems, and specialized data containers.
+DevForge is a VS Code language package for simple structured DevForge files. The repository name is `DevF6rge`; the language and extension display name are `DevForge`.
 
-╔══════════╗<br>
-║File Types║<br>
-╚══════════╝<br>
+DevForge files are designed to stay readable and flexible:
 
-1.[.Dev | .dev | .DEV]<br>
-2.[.Master | .master]<br>
-3.[.Slave | .slave]<br>
-4.[.NPC | .npc]<br>
-5.[.Battle | .battle]<br>
-6.[.Log | .log | .LOG]<br>
-7.[.Ships | .ships]<br>
-8.[.Dex | .DEX | .dex]<br>
-9.[.Gen | .GEN | .gen]<br>
+- Bracket categories such as `[Profile]`
+- Nested category blocks such as `[Profile]:{ ... }`
+- Plain `key=value` entries
+- Flexible category and key names
+- `//` line comments and `/* */` block comments
 
-╔══════════════════════╗<br>
-║Suggested File Groups║<br>
-╚══════════════════════╝<br>
+## Supported File Extensions
 
-These are example grouping patterns for organization/reference only.<br>
-They are not required by the parser unless explicitly handled by the application.<br><br>
+DevForge currently maps these extensions to the same `devforge` language:
 
-1.[Hp | MP | LV | EXP | Link]<br>
-→ Common stat / progression grouping<br><br>
+- `.Dev`, `.dev`, `.DEV`
+- `.Log`, `.log`, `.LOG`
+- `.Master`, `.master`
+- `.Slave`, `.slave`
+- `.NPC`, `.npc`
+- `.Battle`, `.battle`
+- `.Ships`, `.ships`
+- `.Dex`, `.DEX`, `.dex`
+- `.Gen`, `.GEN`, `.gen`
 
-2.[Gender | Name | Size]<br>
-→ Common identity / descriptor grouping<br><br>
+## Syntax Basics
 
-3.[RGB=(r,g,b)]<br>
-→ Example formatted value grouping<br><br>
+```Dev
+[MachineProfile]:{
+    Name="Example Workstation"
+    Role=Development
+    Cores=8
+    Active=true
 
-╔════════════╗<br>
-║Syntax Rules║<br>
-╚════════════╝<br>
-
-1.All categories use bracket syntax.<br>
-2.Subcategories use the same syntax as main categories.<br>
-3.Parser validates structure, not naming conventions.<br>
-4.Group/category names are flexible unless reserved by application logic.<br>
-5.Extensions are case-insensitive by default.<br>
-
-╔══════════════╗<br>
-║Basic Example║<br>
-╚══════════════╝<br>
-
-[MachineProfiles]:{
-    [ControlPrime]:{
-        [CPU]:{
-            Model=Intel Celeron N5105
-            Cores=4
-        }
+    [Network]:{
+        Host=devforge.local
+        Enabled=yes
     }
 }
+```
 
-╔══════════╗<br>
-║Purpose║<br>
-╚══════════╝<br>
+Rules are intentionally basic:
 
-DevF6rge is designed to provide a flexible structured data format for:<br>
+- Categories use bracket syntax.
+- Nested blocks use `[Name]:{ ... }`.
+- Entries use `Key=Value`.
+- Strings may use double quotes or single quotes.
+- Numbers and booleans are highlighted.
+- Group and key names are flexible unless an application reserves them.
 
-- Configuration Files<br>
-- Machine Profiles<br>
-- Character/NPC Data<br>
-- Battle Systems<br>
-- Logging Systems<br>
-- Inventory/Dex Data<br>
-- Specialized Custom Data Containers<br>
+## Features
 
-╔═════╗<br>
-║Notes║<br>
-╚═════╝<br>
+- Syntax highlighting for categories, block starters, keys, operators, strings, numbers, booleans, and comments
+- Editor bracket configuration for `{}`, `[]`, `()`, and `<>`
+- DevForge Dark theme
+- DevForge snippets
+- Example files in `examples/`
 
-- Formatting/spacing may vary depending on implementation.<br>
-- Developers may create custom reserved groups/categories.<br>
-- Parser behavior can be extended per application.<br>
-- This format is designed for flexibility and readability.<br>
-3.[RGB=(r,g,b)]<br>
-→ Example formatted value grouping<br><br>
+## Examples
 
-╔═════╗<br>
-║Notes║<br>
-╚═════╝<br>
+The `examples/` folder contains clean reference samples:
 
-- File extensions are case-insensitive unless application logic overrides this.<br>
-- Group names are flexible and may be customized.<br>
-- Parser validates structure/syntax, not naming conventions.<br>
-- These examples help maintain consistency/readability.<br>
-╔══════════════╗<br>
-║LOG File Format║<br>
-╚══════════════╝<br>
+- `examples/basic.Dev`
+- `examples/log.Log`
+- `examples/profile.Master`
 
-LOG files use the same structural syntax as DEV files.<br>
-Primary differences are intended purpose and usage context.<br><br>
+`TEST/TEST.Dev` is a syntax and highlighting test file. It is not the final format standard.
 
-Purpose:<br>
+## Install Or Update
 
-- Runtime Logging<br>
-- Diagnostics / Error Tracking<br>
-- Event Recording<br>
-- Debug Output<br>
-- Historical Activity Tracking<br><br>
+Install a packaged VSIX in VS Code:
 
-Basic Example:<br>
+```powershell
+code --install-extension devforge-language-1.1.0.vsix
+```
 
-[Session]:{
-    Start=12:00PM
-    End=12:45PM
-    Status=Completed
-}
+Use the newest `devforge-language-*.vsix` file available in the repo when installing or updating.
 
-[Events]:{
-    [Event1]:{
-        Type=Load
-        Result=Success
-    }
+## Development Notes
 
-    [Event2]:{
-        Type=Save
-        Result=Success
-    }
-}
-
-Notes:<br>
-
-- LOG files follow the same parser/structure rules as DEV files.<br>
-- Applications may reserve special LOG groups/categories for diagnostics.<br>
-- LOG files are intended for runtime/generated data rather than static configuration.<br>
+- `package.json` is the official source for the extension version.
+- `.vsix` package files are intentionally committed. This repo is also a backup/install vault for reinstalling DevForge on new devices or fresh VS Code setups.
+- Do not ignore or delete existing `.vsix` files unless the project owner explicitly says to.
+- `PIX/Pix.dev` and temporary PIX courier files are local-only and should not be committed.
+- Do not ignore the whole `PIX/` folder; safe PIX documentation may be tracked if added later.

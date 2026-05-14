@@ -1,0 +1,20 @@
+/* Profile-style DevForge example */
+[Profiles]:{
+    [Workstation]:{
+        Name="Example Workstation"
+        Role=Development
+        Active=yes
+
+        [Hardware]:{
+            CPU=Generic Processor
+            Cores=8
+            MemoryGB=16
+        }
+    }
+
+    [Server]:{
+        Name='Example Server'
+        Role=Storage
+        Active=enabled
+    }
+}

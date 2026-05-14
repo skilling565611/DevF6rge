@@ -1,0 +1,20 @@
+// Runtime log example
+[Session]:{
+    Start=12:00PM
+    End=12:45PM
+    Status=Completed
+}
+
+[Events]:{
+    [Event1]:{
+        Type=Load
+        Result=Success
+        Duration=1.25
+    }
+
+    [Event2]:{
+        Type=Save
+        Result=Success
+        Retry=no
+    }
+}

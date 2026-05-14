@@ -59,6 +59,12 @@
                 "uiTheme": "vs-dark",
                 "path": "./themes/devforge-dark-color-theme.json"
             }
+        ],
+        "snippets": [
+            {
+                "language": "devforge",
+                "path": "./snippets/devforge.code-snippets"
+            }
         ]
     },
     "repository": {
