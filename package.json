@@ -2,7 +2,7 @@
     "name": "devforge-language",
     "displayName": "DevForge",
     "description": "DevForge multi-tag scripting language for .Dev files",
-    "version": "1.0.8",
+    "version": "1.1.0",
     "publisher": "JacobS",
     "icon": "IMG/logo.png",
     "engines": {
@@ -51,6 +51,13 @@
                 "language": "devforge",
                 "scopeName": "source.devforge",
                 "path": "./syntaxes/devforge.tmLanguage.json"
+            }
+        ],
+        "themes": [
+            {
+                "label": "DevForge Dark",
+                "uiTheme": "vs-dark",
+                "path": "./themes/devforge-dark-color-theme.json"
             }
         ]
     },

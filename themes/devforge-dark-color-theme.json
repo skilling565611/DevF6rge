@@ -1,0 +1,125 @@
+{
+    "name": "DevForge Dark",
+    "type": "dark",
+    "colors": {
+        "editor.background": "#101419",
+        "editor.foreground": "#D6DEE8",
+        "editorLineNumber.foreground": "#4C5866",
+        "editorLineNumber.activeForeground": "#8EA4B8",
+        "editorCursor.foreground": "#7DD3FC",
+        "editor.selectionBackground": "#26435A",
+        "editor.inactiveSelectionBackground": "#1E303F",
+        "editor.lineHighlightBackground": "#17202A",
+        "editorWhitespace.foreground": "#2B3540",
+        "editorIndentGuide.background1": "#25313C",
+        "editorIndentGuide.activeBackground1": "#3B4A56",
+        "sideBar.background": "#0D1117",
+        "activityBar.background": "#0B0F14",
+        "statusBar.background": "#12202A",
+        "titleBar.activeBackground": "#0D1117",
+        "tab.activeBackground": "#101419",
+        "tab.inactiveBackground": "#0D1117"
+    },
+    "tokenColors": [
+        {
+            "name": "DevForge category names",
+            "scope": [
+                "entity.name.section.category.devforge"
+            ],
+            "settings": {
+                "foreground": "#7DD3FC",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "DevForge block category names",
+            "scope": [
+                "meta.block.category.devforge entity.name.section.category.devforge"
+            ],
+            "settings": {
+                "foreground": "#38BDF8",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "DevForge keys",
+            "scope": [
+                "variable.other.key.devforge"
+            ],
+            "settings": {
+                "foreground": "#FACC15"
+            }
+        },
+        {
+            "name": "DevForge operators",
+            "scope": [
+                "keyword.operator.assignment.devforge",
+                "punctuation.separator.block.devforge"
+            ],
+            "settings": {
+                "foreground": "#C084FC"
+            }
+        },
+        {
+            "name": "DevForge strings",
+            "scope": [
+                "string.quoted.double.devforge",
+                "string.quoted.single.devforge"
+            ],
+            "settings": {
+                "foreground": "#A7F3D0"
+            }
+        },
+        {
+            "name": "DevForge string escapes",
+            "scope": [
+                "constant.character.escape.devforge"
+            ],
+            "settings": {
+                "foreground": "#F9A8D4"
+            }
+        },
+        {
+            "name": "DevForge numbers",
+            "scope": [
+                "constant.numeric.devforge"
+            ],
+            "settings": {
+                "foreground": "#FDBA74"
+            }
+        },
+        {
+            "name": "DevForge booleans",
+            "scope": [
+                "constant.language.boolean.devforge"
+            ],
+            "settings": {
+                "foreground": "#F472B6",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "DevForge comments",
+            "scope": [
+                "comment.line.double-slash.devforge",
+                "comment.block.devforge"
+            ],
+            "settings": {
+                "foreground": "#6B7C8E",
+                "fontStyle": "italic"
+            }
+        },
+        {
+            "name": "DevForge comment and string delimiters",
+            "scope": [
+                "punctuation.definition.comment.begin.devforge",
+                "punctuation.definition.comment.end.devforge",
+                "punctuation.definition.string.begin.devforge",
+                "punctuation.definition.string.end.devforge"
+            ],
+            "settings": {
+                "foreground": "#7F8EA3"
+            }
+        }
+    ]
+}
