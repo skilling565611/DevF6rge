@@ -7,3 +7,23 @@
         )
     }
 ]
+
+// DevForge syntax highlighting test
+[MachineProfiles]:{
+    [ControlPrime]:{
+        Name="Control Prime"
+        CPU=Intel Celeron N5105
+        Cores=4
+        Active=true
+        Debug=enabled
+    }
+
+    /*
+        Block comment test
+    */
+    [ArcticPrime]:{
+        Name='Arctic Prime'
+        Role=Control Hub
+        Active=yes
+    }
+}

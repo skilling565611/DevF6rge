@@ -3,31 +3,196 @@
     "name": "DevForge",
     "patterns": [
         {
-            "name":"keyword.control.tag.devforge",
-            "match":"@[a-zA-Z]+"
+            "include": "#comments"
         },
         {
-            "name":"variable.key.devforge",
-            "match":"\\$[a-zA-Z_][a-zA-Z0-9_]*(?=\\s*=)"
+            "include": "#strings"
         },
         {
-            "name":"keyword.operator.assignment.devforge",
-            "match":"="
+            "include": "#block-category"
         },
         {
-            "name":"string.quoted.double.devforge",
-            "begin":"\"",
-            "end":"\"",
-            "patterns":[
+            "include": "#category"
+        },
+        {
+            "include": "#key-value"
+        },
+        {
+            "include": "#values"
+        },
+        {
+            "include": "#punctuation"
+        }
+    ],
+    "repository": {
+        "comments": {
+            "patterns": [
                 {
-                    "name":"constant.character.escape.devforge",
-                    "match":"\\\\."
+                    "name": "comment.block.devforge",
+                    "begin": "/\\*",
+                    "beginCaptures": {
+                        "0": {
+                            "name": "punctuation.definition.comment.begin.devforge"
+                        }
+                    },
+                    "end": "\\*/",
+                    "endCaptures": {
+                        "0": {
+                            "name": "punctuation.definition.comment.end.devforge"
+                        }
+                    }
+                },
+                {
+                    "name": "comment.line.double-slash.devforge",
+                    "match": "//.*$"
                 }
             ]
         },
-        {
-            "name":"comment.line.double-slash.devforge",
-            "match":"//.*$"
+        "strings": {
+            "patterns": [
+                {
+                    "name": "string.quoted.double.devforge",
+                    "begin": "\"",
+                    "beginCaptures": {
+                        "0": {
+                            "name": "punctuation.definition.string.begin.devforge"
+                        }
+                    },
+                    "end": "\"",
+                    "endCaptures": {
+                        "0": {
+                            "name": "punctuation.definition.string.end.devforge"
+                        }
+                    },
+                    "patterns": [
+                        {
+                            "name": "constant.character.escape.devforge",
+                            "match": "\\\\."
+                        }
+                    ]
+                },
+                {
+                    "name": "string.quoted.single.devforge",
+                    "begin": "'",
+                    "beginCaptures": {
+                        "0": {
+                            "name": "punctuation.definition.string.begin.devforge"
+                        }
+                    },
+                    "end": "'",
+                    "endCaptures": {
+                        "0": {
+                            "name": "punctuation.definition.string.end.devforge"
+                        }
+                    },
+                    "patterns": [
+                        {
+                            "name": "constant.character.escape.devforge",
+                            "match": "\\\\."
+                        }
+                    ]
+                }
+            ]
+        },
+        "block-category": {
+            "name": "meta.block.category.devforge",
+            "match": "(\\[)([A-Za-z_][A-Za-z0-9_ -]*)(\\])(\\s*)(:)(\\s*)(\\{)",
+            "captures": {
+                "1": {
+                    "name": "punctuation.definition.category.begin.devforge"
+                },
+                "2": {
+                    "name": "entity.name.section.category.devforge"
+                },
+                "3": {
+                    "name": "punctuation.definition.category.end.devforge"
+                },
+                "5": {
+                    "name": "punctuation.separator.block.devforge"
+                },
+                "7": {
+                    "name": "punctuation.section.block.begin.devforge"
+                }
+            }
+        },
+        "category": {
+            "name": "meta.category.devforge",
+            "match": "(\\[)([A-Za-z_][A-Za-z0-9_ -]*)(\\])",
+            "captures": {
+                "1": {
+                    "name": "punctuation.definition.category.begin.devforge"
+                },
+                "2": {
+                    "name": "entity.name.section.category.devforge"
+                },
+                "3": {
+                    "name": "punctuation.definition.category.end.devforge"
+                }
+            }
+        },
+        "key-value": {
+            "name": "meta.assignment.devforge",
+            "match": "\\b([A-Za-z_][A-Za-z0-9_ -]*)(\\s*)(=)",
+            "captures": {
+                "1": {
+                    "name": "variable.other.key.devforge"
+                },
+                "3": {
+                    "name": "keyword.operator.assignment.devforge"
+                }
+            }
+        },
+        "values": {
+            "patterns": [
+                {
+                    "name": "constant.language.boolean.devforge",
+                    "match": "\\b(?i:true|false|yes|no|enabled|disabled)\\b"
+                },
+                {
+                    "name": "constant.numeric.devforge",
+                    "match": "\\b[-+]?(?:\\d+\\.\\d+|\\d+|\\.\\d+)\\b"
+                }
+            ]
+        },
+        "punctuation": {
+            "patterns": [
+                {
+                    "name": "punctuation.definition.category.begin.devforge",
+                    "match": "\\["
+                },
+                {
+                    "name": "punctuation.definition.category.end.devforge",
+                    "match": "\\]"
+                },
+                {
+                    "name": "punctuation.section.block.end.devforge",
+                    "match": "\\}"
+                },
+                {
+                    "name": "punctuation.separator.block.devforge",
+                    "match": ":"
+                },
+                {
+                    "name": "keyword.operator.assignment.devforge",
+                    "match": "="
+                },
+                {
+                    "name": "punctuation.section.group.begin.devforge",
+                    "match": "\\("
+                },
+                {
+                    "name": "punctuation.section.group.end.devforge",
+                    "match": "\\)"
+                },
+                {
+                    "name": "punctuation.definition.angle.begin.devforge",
+                    "match": "<"
+                },
+                {
+                    "name": "punctuation.definition.angle.end.devforge",
+                    "match": ">"
+                }
+            ]
         }
-    ]
+    }
 }
