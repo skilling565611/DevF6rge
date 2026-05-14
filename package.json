@@ -2,7 +2,7 @@
     "name": "devforge-language",
     "displayName": "DevForge",
     "description": "DevForge multi-tag scripting language for .Dev files",
-    "version": "1.0.7",
+    "version": "1.0.8",
     "publisher": "JacobS",
     "icon": "IMG/logo.png",
     "engines": {
