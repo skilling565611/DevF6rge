@@ -2,6 +2,17 @@
 
 All notable DevForge changes are tracked here.
 
+## 1.3.0
+
+- Add the DevForge File Icons theme with distinct icons for every supported DevForge and OmniVault file type.
+
+## 1.2.0
+
+- Add OmniVault Mailman, package, transfer, manifest, hash, encryption, verification, cleanup, and approval category highlighting.
+- Add `.Mail`, `.Pack`, `.Omni`, `.Vault`, and `.Route` file extensions in all supported letter cases.
+- Add OmniVault Mailman, package, transfer route, verification, and cleanup-approval snippets.
+- Add clean OmniVault Mailman reference examples.
+
 ## 1.2.1 - Planned
 
 - Add DevForge snippets.

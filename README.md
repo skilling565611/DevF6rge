@@ -1,6 +1,6 @@
 # DevForge
 
-DevForge is a VS Code language package for simple structured DevForge files. The repository name is `DevF6rge`; the language and extension display name are `DevForge`.
+DevForge is a VS Code language package for simple structured DevForge and OmniVault transfer files. The repository name is `DevF6rge`; the language and extension display name are `DevForge`.
 
 DevForge files are designed to stay readable and flexible:
 
@@ -23,6 +23,21 @@ DevForge currently maps these extensions to the same `devforge` language:
 - `.Ships`, `.ships`
 - `.Dex`, `.DEX`, `.dex`
 - `.Gen`, `.GEN`, `.gen`
+- `.Mail`, `.mail`, `.MAIL`
+- `.Pack`, `.pack`, `.PACK`
+- `.Omni`, `.omni`, `.OMNI`
+- `.Vault`, `.vault`, `.VAULT`
+- `.Route`, `.route`, `.ROUTE`
+
+## OmniVault Mailman Support
+
+Version 1.2.0 adds highlighting and snippets for readable OmniVault package and transfer files. The core DevForge format remains unchanged; OmniVault categories include `[Mailman]`, `[Package]`, `[Payload]`, `[Manifest]`, `[Hash]`, `[Transfer]`, `[Encryption]`, `[Source]`, `[Destination]`, `[Verify]`, `[Cleanup]`, and `[JacobApproval]`.
+
+Use `examples/mailman.Mail`, `examples/package.Pack`, and `examples/omnivault-route.Route` as starting points. Cleanup examples preserve originals and require explicit Jacob approval.
+
+## File Icons
+
+DevForge v1.3.0 includes the **DevForge File Icons** theme. It provides a distinct icon for each supported file family: Dev, Log, Master, Slave, NPC, Battle, Ships, Dex, Gen, Mail, Pack, Omni, Vault, and Route. After installing the extension, select **DevForge File Icons** from VS Code's File Icon Theme picker.
 
 ## Syntax Basics
 

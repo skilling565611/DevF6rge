@@ -1,0 +1,17 @@
+[Package]:{
+    Name="Batch_001_Patreon_Images"
+    Payload="Payload/"
+    Manifest="Manifest.json"
+    Hashes="Hashes.sha256"
+    EncryptForTransfer=true
+
+    [Verify]:{
+        VerifyHashes=true
+        RequireManifest=true
+    }
+
+    [Cleanup]:{
+        DeleteOriginals=false
+        CleanupRequiresJacobApproval=true
+    }
+}

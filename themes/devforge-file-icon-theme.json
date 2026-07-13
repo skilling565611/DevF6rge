@@ -1,0 +1,34 @@
+{
+  "iconDefinitions": {
+    "_dev": { "iconPath": "../icons/dev.svg" },
+    "_log": { "iconPath": "../icons/log.svg" },
+    "_master": { "iconPath": "../icons/master.svg" },
+    "_slave": { "iconPath": "../icons/slave.svg" },
+    "_npc": { "iconPath": "../icons/npc.svg" },
+    "_battle": { "iconPath": "../icons/battle.svg" },
+    "_ships": { "iconPath": "../icons/ships.svg" },
+    "_dex": { "iconPath": "../icons/dex.svg" },
+    "_gen": { "iconPath": "../icons/gen.svg" },
+    "_mail": { "iconPath": "../icons/mail.svg" },
+    "_pack": { "iconPath": "../icons/pack.svg" },
+    "_omni": { "iconPath": "../icons/omni.svg" },
+    "_vault": { "iconPath": "../icons/vault.svg" },
+    "_route": { "iconPath": "../icons/route.svg" }
+  },
+  "fileExtensions": {
+    "dev": "_dev",
+    "log": "_log",
+    "master": "_master",
+    "slave": "_slave",
+    "npc": "_npc",
+    "battle": "_battle",
+    "ships": "_ships",
+    "dex": "_dex",
+    "gen": "_gen",
+    "mail": "_mail",
+    "pack": "_pack",
+    "omni": "_omni",
+    "vault": "_vault",
+    "route": "_route"
+  }
+}
