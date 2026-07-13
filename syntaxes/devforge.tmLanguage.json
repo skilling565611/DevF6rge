@@ -9,6 +9,9 @@
             "include": "#strings"
         },
         {
+            "include": "#omnivault-category"
+        },
+        {
             "include": "#block-category"
         },
         {
@@ -113,6 +116,15 @@
                 "7": {
                     "name": "punctuation.section.block.begin.devforge"
                 }
+            }
+        },
+        "omnivault-category": {
+            "name": "meta.category.omnivault.devforge",
+            "match": "(\\[)((?i:Mailman|Package|Payload|Manifest|Hash|Hashes|Transfer|Encryption|Source|Destination|Verify|Verification|Cleanup|JacobApproval|OmniVaultMailman|Rules))(\\])",
+            "captures": {
+                "1": { "name": "punctuation.definition.category.begin.devforge" },
+                "2": { "name": "entity.name.section.omnivault.devforge" },
+                "3": { "name": "punctuation.definition.category.end.devforge" }
             }
         },
         "category": {

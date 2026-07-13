@@ -1,0 +1,32 @@
+[OmniVaultMailman]:{
+    Name="Patreon Batch 001"
+    Package="Batch_001_Patreon_Images.omvpack"
+    EncryptedPackage="Batch_001_Patreon_Images.omvpack.enc"
+
+    [Source]:{
+        Device="Arctic Prime"
+        OS="Linux"
+        Folder="~/ArcticPrime_Mailman/Outbox"
+    }
+
+    [Destination]:{
+        Device="Control Prime"
+        OS="Windows"
+        Folder="C:\\Users\\jacob\\OneDrive\\OmniVault\\00_IMPORT_INBOX\\From_Arctic_Prime"
+    }
+
+    [Rules]:{
+        CopyOnly=true
+        DeleteOriginals=false
+        Overwrite=false
+        EncryptForTransfer=true
+        VerifyHashes=true
+        CleanupRequiresJacobApproval=true
+    }
+
+    [Manifest]:{
+        File="Manifest.json"
+        Hashes="Hashes.sha256"
+        Payload="Payload/"
+    }
+}

@@ -1,8 +1,8 @@
 {
     "name": "devforge-language",
     "displayName": "DevForge",
-    "description": "DevForge multi-tag scripting language for .Dev files",
-    "version": "1.1.0",
+    "description": "DevForge structured language for DevForge and OmniVault transfer files",
+    "version": "1.3.0",
     "publisher": "JacobS",
     "icon": "IMG/logo.png",
     "engines": {
@@ -41,7 +41,12 @@
                     ".dex",
                     ".Gen",
                     ".GEN",
-                    ".gen"
+                    ".gen",
+                    ".Mail", ".mail", ".MAIL",
+                    ".Pack", ".pack", ".PACK",
+                    ".Omni", ".omni", ".OMNI",
+                    ".Vault", ".vault", ".VAULT",
+                    ".Route", ".route", ".ROUTE"
                 ],
                 "configuration": "./language-configuration.json"
             }
@@ -58,6 +63,13 @@
                 "label": "DevForge Dark",
                 "uiTheme": "vs-dark",
                 "path": "./themes/devforge-dark-color-theme.json"
+            }
+        ],
+        "iconThemes": [
+            {
+                "id": "devforge-file-icons",
+                "label": "DevForge File Icons",
+                "path": "./themes/devforge-file-icon-theme.json"
             }
         ],
         "snippets": [

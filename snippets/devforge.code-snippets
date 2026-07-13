@@ -50,5 +50,30 @@
             "}"
         ],
         "description": "Create a simple DevForge log session block"
+    },
+    "OmniVault Mailman": {
+        "prefix": "omnivault-mailman",
+        "body": ["[OmniVaultMailman]:{", "\tName=\"${1:Package name}\"", "\tPackage=\"${2:Package.omvpack}\"", "\tEncryptedPackage=\"${3:Package.omvpack.enc}\"", "\t[Source]:{", "\t\tDevice=\"${4:Arctic Prime}\"", "\t\tOS=\"${5:Linux}\"", "\t\tFolder=\"${6:~/Mailman/Outbox}\"", "\t}", "\t[Destination]:{", "\t\tDevice=\"${7:Control Prime}\"", "\t\tOS=\"${8:Windows}\"", "\t\tFolder=\"${9:C:\\\\Users\\\\jacob\\\\OneDrive\\\\OmniVault\\\\00_IMPORT_INBOX}\"", "\t}", "\t$0", "}"],
+        "description": "Create an OmniVault Mailman package definition"
+    },
+    "OmniVault Package": {
+        "prefix": "package",
+        "body": ["[Package]:{", "\tName=\"${1:Package name}\"", "\tPayload=\"${2:Payload/}\"", "\tManifest=\"${3:Manifest.json}\"", "\tHashes=\"${4:Hashes.sha256}\"", "\tEncryptForTransfer=${5|true,false|}", "\t$0", "}"],
+        "description": "Create an OmniVault package block"
+    },
+    "OmniVault Transfer Route": {
+        "prefix": "transfer-route",
+        "body": ["[Transfer]:{", "\t[Source]:{", "\t\tDevice=\"${1:Arctic Prime}\"", "\t\tOS=\"${2:Linux}\"", "\t\tFolder=\"${3:~/Mailman/Outbox}\"", "\t}", "\t[Destination]:{", "\t\tDevice=\"${4:Control Prime}\"", "\t\tOS=\"${5:Windows}\"", "\t\tFolder=\"${6:C:\\\\Users\\\\jacob\\\\OneDrive\\\\OmniVault\\\\00_IMPORT_INBOX}\"", "\t}", "\t$0", "}"],
+        "description": "Create a Windows or Linux transfer route"
+    },
+    "OmniVault Verification": {
+        "prefix": "verification-block",
+        "body": ["[Verify]:{", "\tVerifyHashes=${1|true,false|}", "\tManifest=\"${2:Manifest.json}\"", "\tHashes=\"${3:Hashes.sha256}\"", "\t$0", "}"],
+        "description": "Create an OmniVault verification block"
+    },
+    "OmniVault Cleanup Approval": {
+        "prefix": "cleanup-approval",
+        "body": ["[Cleanup]:{", "\tDeleteOriginals=false", "\tCleanupRequiresJacobApproval=true", "\t[JacobApproval]:{", "\t\tApproved=false", "\t}", "\t$0", "}"],
+        "description": "Create a cleanup block that requires Jacob approval"
     }
 }

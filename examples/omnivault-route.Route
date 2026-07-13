@@ -1,0 +1,22 @@
+[Transfer]:{
+    [Source]:{
+        Device="Arctic Prime"
+        OS="Linux"
+        Folder="~/ArcticPrime_Mailman/Outbox"
+    }
+
+    [Destination]:{
+        Device="Control Prime"
+        OS="Windows"
+        Folder="C:\\Users\\jacob\\OneDrive\\OmniVault\\00_IMPORT_INBOX\\From_Arctic_Prime"
+    }
+
+    [Verify]:{
+        VerifyHashes=true
+    }
+
+    [Cleanup]:{
+        DeleteOriginals=false
+        CleanupRequiresJacobApproval=true
+    }
+}
