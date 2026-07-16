@@ -17,6 +17,7 @@ DevForge currently maps these extensions to the same `devforge` language:
 - `.Dev`, `.dev`, `.DEV`
 - `.Log`, `.log`, `.LOG`
 - `.Master`, `.master`
+- `.AI`, `.ai`
 - `.Slave`, `.slave`
 - `.NPC`, `.npc`
 - `.Battle`, `.battle`
@@ -87,7 +88,7 @@ The `examples/` folder contains clean reference samples:
 Install a packaged VSIX in VS Code:
 
 ```powershell
-code --install-extension devforge-language-1.1.0.vsix
+code --install-extension devforge-language-1.3.1.vsix
 ```
 
 Use the newest `devforge-language-*.vsix` file available in the repo when installing or updating.

@@ -2,7 +2,7 @@
     "name": "devforge-language",
     "displayName": "DevForge",
     "description": "DevForge structured language for DevForge and OmniVault transfer files",
-    "version": "1.3.0",
+    "version": "1.3.1",
     "publisher": "JacobS",
     "icon": "IMG/logo.png",
     "engines": {
@@ -28,6 +28,8 @@
                     ".LOG",
                     ".Master",
                     ".master",
+                    ".AI",
+                    ".ai",
                     ".Slave",
                     ".slave",
                     ".NPC",
