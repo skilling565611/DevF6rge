@@ -118,6 +118,20 @@ The `examples/` folder contains clean reference samples:
 
 `TEST/TEST.Dev` is a syntax and highlighting test file. It is not the final format standard.
 
+## One-Command Build And Install
+
+From the project root, run the helper for your operating system:
+
+```bash
+bash Scripts/Linux/BuildInstall.sh
+```
+
+```bat
+Scripts\Windows\BuildInstall.bat
+```
+
+Each helper packages DevForge 2.1.2, installs it into the local VS Code with `--force`, and reminds you to reload the VS Code window. Node.js/npm and the VS Code `code` command must be available.
+
 ## Install Or Update
 
 Install a packaged VSIX in VS Code:

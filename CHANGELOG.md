@@ -2,12 +2,13 @@
 
 All notable DevForge changes are tracked here.
 
-## 2.2.0
+## 2.1.2
 
 - Add `.Items`, `.items`, and `.ITEMS` as DevForge language associations.
 - Add a dedicated green-and-gold Items file icon.
 - Add an isolated `.Items` syntax and icon preview fixture.
 - Preserve native language coloring and tooling for standard development formats.
+- Add one-command Linux and Windows helpers for packaging and installing the VSIX.
 
 ## 2.1.1
 
