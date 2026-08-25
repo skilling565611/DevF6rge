@@ -53,15 +53,15 @@
     }
 
     [LinuxCodexResponse]:{
-        Status="Pending"
-        NodeBefore=""
-        NodeAfter=""
-        NVMResult=""
-        BuildResult=""
-        InstallResult=""
-        VerifiedExtension=""
-        CommandsUsed=""
-        RepositoryChangesNeeded=""
-        Notes=""
+        Status="Completed 2026-08-25"
+        NodeBefore="v18.19.1 (/usr/bin/node)"
+        NodeAfter="v22.23.2 (/home/devprime/.nvm/versions/node/v22.23.2/bin/node)"
+        NVMResult="nvm 0.40.7 loads from ~/.bashrc; Node v22.23.2 installed; default alias 22 -> v22.23.2"
+        BuildResult="Success: devforge-language-2.1.2.vsix created in project root (173987 bytes)"
+        InstallResult="Success: VS Code CLI reported the VSIX was successfully installed"
+        VerifiedExtension="jacobs.devforge-language@2.1.2"
+        CommandsUsed="source ~/.nvm/nvm.sh; nvm install 22; nvm use 22; nvm alias default 22; bash Scripts/Linux/BuildInstall.sh; code --list-extensions --show-versions | rg -i '^jacobs\\.devforge-language@'"
+        RepositoryChangesNeeded="None; Scripts/Linux/BuildInstall.sh completed successfully without correction"
+        Notes="System Node was not removed or replaced. Existing VSIX files were preserved. VSCE emitted a non-fatal warning that no .vscodeignore or package.json files property exists. Run Developer: Reload Window in VS Code to activate the freshly installed extension in open windows."
     }
 }
