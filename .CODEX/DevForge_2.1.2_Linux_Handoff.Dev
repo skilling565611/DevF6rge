@@ -1,0 +1,67 @@
+[CodexHandoff]:{
+    ID="DevForge_2.1.2_Linux_Packaging"
+    Project="DevF6rge"
+    Repository="https://github.com/skilling565611/DevF6rge.git"
+    Branch="dev"
+    Created="2026-08-25"
+    RequestedBy="JacobS"
+    SourceCodex="ChatGPT Work Mode"
+    TargetCodex="Arctic Prime Linux Codex"
+    Status="Ready For Linux Diagnosis"
+
+    [Environment]:{
+        Device="Arctic Prime"
+        OS="Linux Mint"
+        ProjectDirectory="~/DevF6rge"
+        CurrentNode="v18.19.1"
+        TargetNode="Node 22"
+        DevForgeVersion="2.1.2"
+    }
+
+    [CurrentProblem]:{
+        Command="npx --yes @vscode/vsce package --out devforge-language-2.1.2.vsix"
+        Error="ReferenceError: File is not defined"
+        ErrorSource="undici/lib/web/webidl/index.js"
+        Cause="Current VSCE dependency chain is incompatible with Node 18"
+        NVMStatus="Installation or shell loading attempted; nvm command not recognized"
+    }
+
+    [LinuxCodexTask]:{
+        Step1="Inspect the actual NVM installation and Bash initialization"
+        Step2="Repair user-level NVM loading if incomplete"
+        Step3="Safely install and activate Node 22 for devprime"
+        Step4="Do not remove or replace unrelated Linux system packages"
+        Step5="Run the repository Linux helper"
+        Helper="bash Scripts/Linux/BuildInstall.sh"
+        Step6="Confirm devforge-language-2.1.2.vsix is created in the project root"
+        Step7="Confirm VS Code installs JacobS.devforge-language version 2.1.2"
+        Step8="Record commands, results, and any repository-script correction below"
+    }
+
+    [ExpectedCommands]:{
+        Build="npx --yes @vscode/vsce package --out devforge-language-2.1.2.vsix"
+        Install="code --install-extension ./devforge-language-2.1.2.vsix --force"
+        Verify="code --list-extensions --show-versions | grep -i devforge"
+    }
+
+    [Safety]:{
+        DeleteFiles=false
+        ReplaceSystemNode=false
+        ExposeCredentials=false
+        PushDirectlyToDev=false
+        PreserveExistingVSIX=true
+    }
+
+    [LinuxCodexResponse]:{
+        Status="Pending"
+        NodeBefore=""
+        NodeAfter=""
+        NVMResult=""
+        BuildResult=""
+        InstallResult=""
+        VerifiedExtension=""
+        CommandsUsed=""
+        RepositoryChangesNeeded=""
+        Notes=""
+    }
+}
