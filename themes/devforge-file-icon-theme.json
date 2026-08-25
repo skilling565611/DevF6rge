@@ -1,38 +1,107 @@
 {
   "iconDefinitions": {
-    "_dev": { "iconPath": "../icons/dev.svg" },
-    "_log": { "iconPath": "../icons/log.svg" },
-    "_master": { "iconPath": "../icons/master.svg" },
-    "_ai": { "iconPath": "../icons/ai.svg" },
-    "_slave": { "iconPath": "../icons/slave.svg" },
-    "_npc": { "iconPath": "../icons/npc.svg" },
-    "_battle": { "iconPath": "../icons/battle.svg" },
-    "_ships": { "iconPath": "../icons/ships.svg" },
-    "_dex": { "iconPath": "../icons/dex.svg" },
-    "_gen": { "iconPath": "../icons/gen.svg" },
-    "_mail": { "iconPath": "../icons/mail.svg" },
-    "_pack": { "iconPath": "../icons/pack.svg" },
-    "_omni": { "iconPath": "../icons/omni.svg" },
-    "_vault": { "iconPath": "../icons/vault.svg" },
-    "_route": { "iconPath": "../icons/route.svg" },
-    "_xml": { "iconPath": "../icons/xml.svg" },
-    "_html": { "iconPath": "../icons/html.svg" },
-    "_css": { "iconPath": "../icons/css.svg" },
-    "_json": { "iconPath": "../icons/json.svg" },
-    "_python": { "iconPath": "../icons/python.svg" },
-    "_java": { "iconPath": "../icons/java.svg" },
-    "_c": { "iconPath": "../icons/c.svg" },
-    "_cpp": { "iconPath": "../icons/cpp.svg" },
-    "_csharp": { "iconPath": "../icons/csharp.svg" },
-    "_javascript": { "iconPath": "../icons/javascript.svg" },
-    "_typescript": { "iconPath": "../icons/typescript.svg" },
-    "_markdown": { "iconPath": "../icons/markdown.svg" },
-    "_yaml": { "iconPath": "../icons/yaml.svg" },
-    "_sql": { "iconPath": "../icons/sql.svg" },
-    "_shell": { "iconPath": "../icons/shell.svg" },
-    "_go": { "iconPath": "../icons/go.svg" },
-    "_rust": { "iconPath": "../icons/rust.svg" },
-    "_php": { "iconPath": "../icons/php.svg" }
+    "_dev": {
+      "iconPath": "../icons/dev.svg"
+    },
+    "_log": {
+      "iconPath": "../icons/log.svg"
+    },
+    "_master": {
+      "iconPath": "../icons/master.svg"
+    },
+    "_ai": {
+      "iconPath": "../icons/ai.svg"
+    },
+    "_slave": {
+      "iconPath": "../icons/slave.svg"
+    },
+    "_npc": {
+      "iconPath": "../icons/npc.svg"
+    },
+    "_battle": {
+      "iconPath": "../icons/battle.svg"
+    },
+    "_ships": {
+      "iconPath": "../icons/ships.svg"
+    },
+    "_dex": {
+      "iconPath": "../icons/dex.svg"
+    },
+    "_gen": {
+      "iconPath": "../icons/gen.svg"
+    },
+    "_mail": {
+      "iconPath": "../icons/mail.svg"
+    },
+    "_pack": {
+      "iconPath": "../icons/pack.svg"
+    },
+    "_omni": {
+      "iconPath": "../icons/omni.svg"
+    },
+    "_vault": {
+      "iconPath": "../icons/vault.svg"
+    },
+    "_route": {
+      "iconPath": "../icons/route.svg"
+    },
+    "_xml": {
+      "iconPath": "../icons/xml.svg"
+    },
+    "_html": {
+      "iconPath": "../icons/html.svg"
+    },
+    "_css": {
+      "iconPath": "../icons/css.svg"
+    },
+    "_json": {
+      "iconPath": "../icons/json.svg"
+    },
+    "_python": {
+      "iconPath": "../icons/python.svg"
+    },
+    "_java": {
+      "iconPath": "../icons/java.svg"
+    },
+    "_c": {
+      "iconPath": "../icons/c.svg"
+    },
+    "_cpp": {
+      "iconPath": "../icons/cpp.svg"
+    },
+    "_csharp": {
+      "iconPath": "../icons/csharp.svg"
+    },
+    "_javascript": {
+      "iconPath": "../icons/javascript.svg"
+    },
+    "_typescript": {
+      "iconPath": "../icons/typescript.svg"
+    },
+    "_markdown": {
+      "iconPath": "../icons/markdown.svg"
+    },
+    "_yaml": {
+      "iconPath": "../icons/yaml.svg"
+    },
+    "_sql": {
+      "iconPath": "../icons/sql.svg"
+    },
+    "_shell": {
+      "iconPath": "../icons/shell.svg"
+    },
+    "_go": {
+      "iconPath": "../icons/go.svg"
+    },
+    "_rust": {
+      "iconPath": "../icons/rust.svg"
+    },
+    "_php": {
+      "iconPath": "../icons/php.svg"
+    },
+    "_items": {
+      "iconPath": "../icons/items.svg"
+    }
   },
   "fileExtensions": {
     "dev": "_dev",
@@ -92,6 +161,7 @@
     "fish": "_shell",
     "go": "_go",
     "rs": "_rust",
-    "php": "_php"
+    "php": "_php",
+    "items": "_items"
   }
 }
