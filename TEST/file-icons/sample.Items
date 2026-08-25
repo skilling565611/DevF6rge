@@ -1,0 +1,7 @@
+[Item]:{
+    [Core]:{
+        ID="Preview_Item"
+        Name="DevForge Items Preview"
+        Status=Template
+    }
+}
