@@ -30,6 +30,32 @@ DevForge currently maps these extensions to the same `devforge` language:
 - `.Vault`, `.vault`, `.VAULT`
 - `.Route`, `.route`, `.ROUTE`
 
+## Use DevForge With Any Text File
+
+DevForge can be applied manually to any text-based file, including Python, Java,
+HTML, CSS, and JSON. This keeps each file type's native VS Code tooling
+available by default, such as Python debugging, Java language support, and
+JSON validation.
+
+To view an individual file with DevForge highlighting:
+
+1. Open the file in VS Code.
+2. Select its language name in the bottom-right status bar.
+3. Choose **DevForge**.
+
+This changes only the active editor's language mode; it does not rename the
+file or replace the native language association for other files.
+
+## Theme Behavior
+
+Installing DevForge does not change VS Code's active color or file icon theme.
+The DevForge language grammar works with the current theme, so Python, Java,
+HTML, CSS, JSON, and other files keep their existing appearance.
+
+**DevForge Dark** and **DevForge File Icons** remain optional themes. Select
+them only when you want to use those themes across VS Code; otherwise leave
+your current color and icon themes selected.
+
 ## OmniVault Mailman Support
 
 Version 1.2.0 adds highlighting and snippets for readable OmniVault package and transfer files. The core DevForge format remains unchanged; OmniVault categories include `[Mailman]`, `[Package]`, `[Payload]`, `[Manifest]`, `[Hash]`, `[Transfer]`, `[Encryption]`, `[Source]`, `[Destination]`, `[Verify]`, `[Cleanup]`, and `[JacobApproval]`.
@@ -38,7 +64,15 @@ Use `examples/mailman.Mail`, `examples/package.Pack`, and `examples/omnivault-ro
 
 ## File Icons
 
-DevForge v1.3.0 includes the **DevForge File Icons** theme. It provides a distinct icon for each supported file family: Dev, Log, Master, Slave, NPC, Battle, Ships, Dex, Gen, Mail, Pack, Omni, Vault, and Route. After installing the extension, select **DevForge File Icons** from VS Code's File Icon Theme picker.
+DevForge v2.1.0 includes the **DevForge File Icons** theme. It provides distinct
+icons for DevForge file families and common development formats: XML, HTML,
+CSS, JSON, Python, Java, C/C++, C#, JavaScript, TypeScript, Markdown, YAML,
+SQL, shell, Go, Rust, and PHP. After installing the extension, select
+**DevForge File Icons** from VS Code's File Icon Theme picker.
+
+`TEST/file-icons/` contains isolated preview files for each common development
+format supported by the icon theme. They are test fixtures only and do not
+change how your own files are interpreted.
 
 ## Syntax Basics
 

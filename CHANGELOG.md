@@ -2,6 +2,29 @@
 
 All notable DevForge changes are tracked here.
 
+## 2.1.1
+
+- Add isolated file-icon preview fixtures under `TEST/file-icons`.
+- Leave existing DevForge file associations and user file formats unchanged.
+
+## 2.1.0
+
+- Add DevForge file icons for XML, HTML, CSS, JSON, Python, Java, C/C++, C#,
+  JavaScript, TypeScript, Markdown, YAML, SQL, shell, Go, Rust, and PHP.
+
+## 2.0.1
+
+- Assign the DevForge icon to `TEST/gtest.xml` only; other XML files retain
+  their normal icon.
+
+## 2.0.0
+
+- Confirm that installing DevForge leaves the active VS Code color and file
+  icon themes unchanged.
+- Document how to apply DevForge to an individual text file without replacing
+  Python, Java, HTML, CSS, JSON, or other native language tooling.
+- Retain DevForge Dark and DevForge File Icons as optional themes.
+
 ## 1.3.0
 
 - Add the DevForge File Icons theme with distinct icons for every supported DevForge and OmniVault file type.

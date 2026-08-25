@@ -1,0 +1,1 @@
+SELECT 'DevForge icon preview';
