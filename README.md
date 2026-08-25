@@ -29,6 +29,7 @@ DevForge currently maps these extensions to the same `devforge` language:
 - `.Omni`, `.omni`, `.OMNI`
 - `.Vault`, `.vault`, `.VAULT`
 - `.Route`, `.route`, `.ROUTE`
+- `.Items`, `.items`, `.ITEMS` — WorldCore and DevForge item definitions
 
 ## Use DevForge With Any Text File
 
@@ -122,7 +123,7 @@ The `examples/` folder contains clean reference samples:
 Install a packaged VSIX in VS Code:
 
 ```powershell
-code --install-extension devforge-language-1.3.1.vsix
+code --install-extension devforge-language-2.1.1.vsix
 ```
 
 Use the newest `devforge-language-*.vsix` file available in the repo when installing or updating.

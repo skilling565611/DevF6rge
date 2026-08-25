@@ -2,7 +2,7 @@
     "name": "devforge-language",
     "displayName": "DevForge",
     "description": "DevForge structured language for DevForge and OmniVault transfer files",
-    "version": "2.1.1",
+    "version": "2.2.0",
     "publisher": "JacobS",
     "icon": "IMG/logo.png",
     "engines": {
@@ -48,7 +48,8 @@
                     ".Pack", ".pack", ".PACK",
                     ".Omni", ".omni", ".OMNI",
                     ".Vault", ".vault", ".VAULT",
-                    ".Route", ".route", ".ROUTE"
+                    ".Route", ".route", ".ROUTE",
+                    ".Items", ".items", ".ITEMS"
                 ],
                 "configuration": "./language-configuration.json"
             }
