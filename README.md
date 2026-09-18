@@ -63,6 +63,33 @@ Version 1.2.0 adds highlighting and snippets for readable OmniVault package and 
 
 Use `examples/mailman.Mail`, `examples/package.Pack`, and `examples/omnivault-route.Route` as starting points. Cleanup examples preserve originals and require explicit Jacob approval.
 
+## Spreadsheet Support
+
+DevForge can also be used as a readable configuration format for spreadsheet-driven projects, including Google Sheets trackers and game logs. A DevForge file can describe the spreadsheet, tabs, ranges, fields, and optional trigger rules without replacing the spreadsheet itself.
+
+Example:
+
+```Dev
+[Spreadsheet]:{
+    Name="No. Man's sky 4 log"
+    Provider="Google Sheets"
+
+    [Tabs]:{
+        Worlds="Worlds"
+        Corvette="Corvette"
+        Log="LOG"
+    }
+
+    [Trigger]:{
+        When="WorldAdded"
+        Action="AppendLog"
+        Target="LOG"
+    }
+}
+```
+
+Trigger blocks are intentionally descriptive. DevForge stores the rule in a simple, readable form; the application or automation using the file decides how and when the trigger actually runs. This makes it easy to add new spreadsheet actions later without changing the basic DevForge syntax.
+
 ## File Icons
 
 DevForge v2.1.0 includes the **DevForge File Icons** theme. It provides distinct
