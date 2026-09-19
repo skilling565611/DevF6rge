@@ -2,8 +2,11 @@
     "name": "devforge-language",
     "displayName": "DevForge",
     "description": "DevForge structured language for DevForge and OmniVault transfer files",
-    "version": "2.1.2",
+    "version": "2.2.0",
     "publisher": "JacobS",
+    "main": "./src/extension.js",
+    "activationEvents": ["onCustomEditor:devforge.primeSpreadsheet"],
+    "scripts": { "test": "node --test TEST/prime-table.test.js" },
     "icon": "IMG/logo.png",
     "engines": {
         "vscode": "^1.80.0"
@@ -12,6 +15,14 @@
         "Programming Languages"
     ],
     "contributes": {
+        "customEditors": [
+            {
+                "viewType": "devforge.primeSpreadsheet",
+                "displayName": "Prime Spreadsheet",
+                "selector": [{ "filenamePattern": "*.Prime" }, { "filenamePattern": "*.prime" }],
+                "priority": "default"
+            }
+        ],
         "languages": [
             {
                 "id": "devforge",
@@ -49,7 +60,8 @@
                     ".Omni", ".omni", ".OMNI",
                     ".Vault", ".vault", ".VAULT",
                     ".Route", ".route", ".ROUTE",
-                    ".Items", ".items", ".ITEMS"
+                    ".Items", ".items", ".ITEMS",
+                    ".Prime", ".prime", ".PRIME"
                 ],
                 "configuration": "./language-configuration.json"
             }

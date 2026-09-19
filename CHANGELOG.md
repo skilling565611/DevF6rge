@@ -2,6 +2,14 @@
 
 All notable DevForge changes are tracked here.
 
+## 2.2.0
+
+- Add an editable VS Code grid for `.Prime` spreadsheet files.
+- Keep cell edits in the readable Prime text format and support row filtering,
+  adding rows, and adding columns.
+- Preserve the unsaved local No Man's Sky draft separately from newer confirmed
+  records on `origin/dev`.
+
 ## 2.1.2
 
 - Add `.Items`, `.items`, and `.ITEMS` as DevForge language associations.
