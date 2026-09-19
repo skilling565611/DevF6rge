@@ -2,7 +2,7 @@
 setlocal
 
 cd /d "%~dp0\..\.."
-set "VERSION=2.1.2"
+set "VERSION=2.2.0"
 set "VSIX=%CD%\devforge-language-%VERSION%.vsix"
 
 where npx >nul 2>nul

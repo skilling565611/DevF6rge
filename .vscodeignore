@@ -1,0 +1,7 @@
+.CODEX/**
+Spreadsheet/**
+TEST/**
+Scripts/**
+*.vsix
+.gitignore
+DevF6rge.dev.md

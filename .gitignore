@@ -8,3 +8,6 @@ PIX/*control_prime*.dev
 PIX/*Arctic Prime*.dev
 PIX/*ArcticPrime*.dev
 PIX/*arctic_prime*.dev
+
+# Generated extension packages (older tracked releases remain available).
+devforge-language-*.vsix

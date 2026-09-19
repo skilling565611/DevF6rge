@@ -1,0 +1,24 @@
+:root { color-scheme: light dark; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--vscode-editor-background); color: var(--vscode-editor-foreground); font: 13px var(--vscode-font-family); }
+header { display: flex; align-items: center; gap: 8px; padding: 10px; border-bottom: 1px solid var(--vscode-panel-border); flex-wrap: wrap; }
+header strong { font-size: 15px; }
+#summary { color: var(--vscode-descriptionForeground); margin-right: auto; }
+#search { width: min(240px, 35vw); }
+button, input { font: inherit; }
+button { border: 1px solid var(--vscode-button-border, transparent); background: var(--vscode-button-background); color: var(--vscode-button-foreground); padding: 6px 10px; border-radius: 4px; cursor: pointer; }
+button:hover { background: var(--vscode-button-hoverBackground); }
+header input { padding: 6px 8px; border: 1px solid var(--vscode-input-border, var(--vscode-panel-border)); background: var(--vscode-input-background); color: var(--vscode-input-foreground); border-radius: 4px; }
+main { padding: 8px 10px; }
+#notice { min-height: 20px; color: var(--vscode-descriptionForeground); }
+#notice.error { color: var(--vscode-errorForeground); }
+#grid-wrap { overflow: auto; max-height: calc(100vh - 135px); border: 1px solid var(--vscode-panel-border); }
+table { border-collapse: separate; border-spacing: 0; width: max-content; min-width: 100%; }
+th, td { border-right: 1px solid var(--vscode-panel-border); border-bottom: 1px solid var(--vscode-panel-border); }
+th { position: sticky; top: 0; z-index: 2; text-align: left; min-width: 125px; max-width: 300px; padding: 9px 8px; background: var(--vscode-sideBar-background); }
+th:first-child { min-width: 45px; position: sticky; left: 0; z-index: 3; }
+td.row-number { position: sticky; left: 0; z-index: 1; background: var(--vscode-sideBar-background); text-align: right; color: var(--vscode-descriptionForeground); padding: 0 8px; min-width: 45px; }
+td input { display: block; width: 180px; min-width: 125px; padding: 7px 8px; border: 1px solid transparent; outline: none; color: inherit; background: transparent; }
+td input:focus { border-color: var(--vscode-focusBorder); background: var(--vscode-input-background); }
+td:last-child input { width: 420px; }
+footer { padding: 8px 12px; color: var(--vscode-descriptionForeground); border-top: 1px solid var(--vscode-panel-border); }

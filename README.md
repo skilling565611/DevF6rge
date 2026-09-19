@@ -30,6 +30,7 @@ DevForge currently maps these extensions to the same `devforge` language:
 - `.Vault`, `.vault`, `.VAULT`
 - `.Route`, `.route`, `.ROUTE`
 - `.Items`, `.items`, `.ITEMS` — WorldCore and DevForge item definitions
+- `.Prime`, `.prime`, `.PRIME` — Prime spreadsheet text and grid editor
 
 ## Use DevForge With Any Text File
 
@@ -65,7 +66,22 @@ Use `examples/mailman.Mail`, `examples/package.Pack`, and `examples/omnivault-ro
 
 ## Spreadsheet Support
 
-DevForge can also be used as a readable configuration format for spreadsheet-driven projects, including Google Sheets trackers and game logs. A DevForge file can describe the spreadsheet, tabs, ranges, fields, and optional trigger rules without replacing the spreadsheet itself.
+`.Prime` files open as an editable spreadsheet grid in VS Code. The grid shows
+the existing rows and columns, filters rows by text, and adds blank rows or
+columns. Click a cell, edit it, then press Enter or leave the cell to apply the
+change. Ctrl+S saves through VS Code. **Open text** switches to the underlying
+readable `.Prime` file. Cell edits keep the surrounding text and other rows
+unchanged, including `|` characters inside a bracketed value.
+
+The `.Prime` format uses one `|`-separated row per line. Each cell has a key and
+bracketed value, such as `PLANET.[Muniu Alpha]`; the first row names columns,
+such as `D.[Planet]`. New rows leave data cells blank except for the next
+numeric ID. Formulas, charts, and workbook imports are not yet part of this
+first grid editor.
+
+DevForge `.Dev` files can also describe spreadsheet-driven projects, including
+Google Sheets trackers and game logs. A `.Dev` file can describe tabs, ranges,
+fields, and trigger rules without replacing the spreadsheet itself.
 
 Example:
 

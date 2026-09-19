@@ -2,10 +2,9 @@
 set -euo pipefail
 
 project_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
-version="2.1.2"
-vsix="$project_dir/devforge-language-$version.vsix"
-
 cd "$project_dir"
+version="$(node -p 'require("./package.json").version')"
+vsix="$project_dir/devforge-language-$version.vsix"
 
 command -v npx >/dev/null 2>&1 || {
     echo "Node.js/npm is required. Install it, then run this file again."
